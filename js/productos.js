@@ -1,4 +1,5 @@
 import { conexionAPI } from "./conexionAPI.js";
+import {obtenerProducto} from "./mostrarProducto.js";
 
 const formulario = document.querySelector("[data-formulario");
 
