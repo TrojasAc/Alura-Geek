@@ -39,7 +39,7 @@ const botonEliminar = producto.querySelector(`[data-eliminar="${id}"]`);
     return producto;
 }
 
-async function obtenerProductos() {
+export async function obtenerProductos() {
     try{
     const listaAPI = await conexionAPI.listarProductos()
     lista.innerHTML="";   
