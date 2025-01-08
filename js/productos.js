@@ -1,5 +1,5 @@
 import { conexionAPI } from "./conexionAPI.js";
-import {obtenerProducto} from "./mostrarProducto.js";
+import {obtenerProductos} from "./mostrarProducto.js";
 
 const formulario = document.querySelector("[data-formulario");
 
@@ -16,7 +16,7 @@ async function crearProducto(evento){
     alert("Producto creado con éxito");
     formulario.reset(); 
 
-        await obtenerProducto();
+        await obtenerProductos();
 
 } catch (e) {
    alert(e);
