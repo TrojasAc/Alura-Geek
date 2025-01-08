@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": "1367",
+      "nombre": "prueba",
+      "precio": "18000",
+      "imagen": "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg"
+    },
+    {
+      "id": 1736186932888,
+      "nombre": "hjg",
+      "precio": "7657",
+      "imagen": "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg"
+    },
+    {
+      "id": 1736187325675,
+      "nombre": "camilo",
+      "precio": "234234",
+      "imagen": "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg"
+    },
+    {
+      "id": 1736294554294,
+      "nombre": "prueba",
+      "precio": "7283",
+      "imagen": "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg"
+    }
+  ]
+}

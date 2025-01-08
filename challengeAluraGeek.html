@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Productos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <span>❤️❤️❤️</span> AluraGeek
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <section class="productos">
+            <h1 class="productos__titulo">MIS PRODUCTOS:</h1>
+            <ul class="productos__grid" alt="productos inventario" data-lista></ul>
+        </section>
+
+        <aside class="formulario">
+            <h2 class="formulario__titulo">AGREGAR PRODUCTO:</h2>
+            <form class="formulario__contenido" id="productoForm" data-formulario>
+                <input type="text" name="nombre"  placeholder="Nombre..." class="formulario__input" required data-nombre>
+                <input type="number" name="precio" placeholder="Precio..." class="formulario__input" required step = "0.01" data-precio>
+                <input type="url" name="imagen" placeholder="URL de la imagen..." class="formulario__input" required data-imagen>
+                              
+               
+                <div class="formulario__botones">
+                    <button type="submit" class="formulario__boton formulario__boton--enviar">Enviar</button>
+                    <button type="reset" class="formulario__boton formulario__boton--limpiar">Limpiar</button>
+                </div>
+            </form>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto"><span>❤️❤️❤️</span> AluraGeek</p>
+        <p class="footer__texto">DESARROLLADO POR TATIANA ROJAS</p>
+        <p class="footer__texto">ALURA LATAM - 2025</p>
+    </footer>
+
+    <script src="js/productos.js" type="module"></script>
+    <script src="./js/mostrarProducto.js" type="module"></script>
+</body>
+</html>
