@@ -4,7 +4,13 @@
     { "src": "index.html", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/", "dest": "/index.html" }
+    {
+      "src": "/(css|js|iconos)/(.*)",
+      "dest": "/$1/$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }
-
