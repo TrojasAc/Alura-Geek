@@ -1,5 +1,5 @@
 async function listarProductos() {
-    const conexion = await fetch ("https://alura-geek-olive-nine.vercel.app/api/productos");
+    const conexion = await fetch ("https://alura-geek-olive-nine.vercel.app/productos");
 
     const conexionConvertida = await conexion.json();
 
@@ -7,7 +7,7 @@ async function listarProductos() {
 }
 
 async function enviarProductos(nombre,precio,imagen){
-    const conexion = await fetch ("https://alura-geek-olive-nine.vercel.app/api/productos", {
+    const conexion = await fetch ("https://alura-geek-olive-nine.vercel.app/productos", {
         method: "POST",
         headers:{"Content-type":"application/json"},
         body:JSON.stringify({
@@ -28,7 +28,7 @@ async function enviarProductos(nombre,precio,imagen){
 }
 
 async function eliminarProducto(id) {
-    const conexion = await fetch(`https://alura-geek-olive-nine.vercel.app/api/productos/${id}`, {
+    const conexion = await fetch(`https://alura-geek-olive-nine.vercel.app/productos/${id}`, {
         method: "DELETE",
     });
     
