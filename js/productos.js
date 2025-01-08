@@ -15,6 +15,8 @@ async function crearProducto(evento){
     alert("Producto creado con éxito");
     formulario.reset(); 
 
+        await obtenerProducto();
+
 } catch (e) {
    alert(e);
 }
